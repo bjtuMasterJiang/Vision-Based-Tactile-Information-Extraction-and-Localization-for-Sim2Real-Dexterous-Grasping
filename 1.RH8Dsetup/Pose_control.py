@@ -1,5 +1,5 @@
 import time
-import motionhub    #自己编写的子程序
+import motionhub    # Self-written subroutine
 import pypot
 import pypot.dynamixel
 from pypot.robot import from_json
@@ -29,7 +29,7 @@ if __name__ == '__main__':
     # if len(found_ids) < 2:
     #     raise IOError('You should connect at least two motors on the bus for this test.')
     #
-    # ids = found_ids[:9],先屏蔽，不用每次打开都搜索一下
+    # ids = found_ids[:9], block first, don't search every time you open it
     # ids = [30, 31, 32, 33, 34, 35, 36, 37, 38]
     # dxl_io.enable_torque(ids)
     # pos = dict(zip(ids, itertools.repeat(0)))

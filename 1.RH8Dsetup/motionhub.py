@@ -13,15 +13,15 @@ print('Using the first on the list', port)
 dxl_io = pypot.dynamixel.DxlIO(port)
 print('Connected!')
 ids = [30, 31, 32, 33, 34, 35, 36, 37]
-# 30 主板
-# 31 腕部旋转
-# 32 腕部内收
-# 33 腕部屈曲
-# 34 拇指内收
-# 35 拇指屈曲
-# 36 食指屈曲
-# 37 中指屈曲
-# 38 第 4 和第 5 指屈曲
+# 30 main-board
+# 31 wrist rotation
+# 32 wrist adduction
+# 33 wrist flexion
+# 34 thumb adduction
+# 35 thumb flexion
+# 36 index finger flexion
+# 37 middle finger flexion
+# 38 the fourth and fifth fingers flexion
 dxl_io.enable_torque(ids)
 def position_detect():
     print(dxl_io.get_present_position(ids))
@@ -30,10 +30,12 @@ def speed_detect():
     print(v_speed)
 
 
-#负数手掌往外扩，正数往内收，零值约为半握拳
+# negative number: extend palms out
+# positive number: draw palms in
+# zero: the palm of the hand is about half clenched
 def victory():
     # speed=180
-    # dxl_io.set_moving_speed(ids,speed) #设置速度
+    # dxl_io.set_moving_speed(ids,speed) # set the speed
     dxl_io.set_moving_speed({37: 0.01})
     dxl_io.set_goal_position({38: 105})
     dxl_io.set_goal_position({37: -155})
