@@ -1,0 +1,58 @@
+cup-1
+leaf_size: 32
+kdtree_radius: 0.05
+threshold_normal_y: 0.15
+threshold_color_var: 0.002
+
+cup-2
+leaf_size: 32
+kdtree_radius: 0.05
+threshold_normal_y: 0.15
+threshold_color_var: 0.002
+
+Number of fingers used: Five
+
+
+beverage-1
+leaf_size: 32
+kdtree_radius: 0.05
+threshold_normal_y: 0.15
+threshold_color_var: 0.0015
+
+beverge-2
+leaf_size: 32
+kdtree_radius: 0.05
+threshold_normal_y: 0.16
+threshold_color_var: 0.002
+
+Number of fingers used: Four
+
+
+cap-1
+leaf_size: 32
+kdtree_radius: 0.05
+threshold_normal_y: 0.2
+threshold_color_var: 0.01
+
+cap-2
+leaf_size: 32
+kdtree_radius: 0.05
+threshold_normal_y: 0.2
+threshold_color_var: 0.01
+
+Number of fingers used: Three
+
+
+vc-1
+leaf_size: 32
+kdtree_radius: 0.05
+threshold_normal_y: 0.2
+threshold_color_var: 0.002
+
+vc-2
+leaf_size: 32
+kdtree_radius: 0.05
+threshold_normal_y: 0.13
+threshold_color_var: 0.0015
+
+Number of fingers used: Two
